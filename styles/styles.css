@@ -1,0 +1,203 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;800&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    scroll-behavior: smooth;
+    font-size: 10px;
+    position: relative;
+    margin: 0;
+    padding: 0;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    min-height: 100%;
+}
+body {
+    font-size: 1.6rem;
+    background-color: hsl(210, 60%, 98%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.container {
+    margin: 0;
+    padding: 0;
+}
+.row {
+    display: flex;
+    flex-direction: row;
+}
+.col {
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    height: 70px;
+}
+.not {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.mark, .not {
+    padding: 0 1.5rem;
+} 
+.notifs {
+    background-color: hsl(218, 86%, 26%);
+    color: hsl(0, 0%, 100%);
+    margin: 1rem;
+    font-size: 1.6rem;
+    font-weight: 800;
+    width: 32px;
+    height: 25px;
+    border-radius: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.rdnot {
+    border-radius: 50%;
+    background-color: hsl(1, 90%, 64%);
+    width: 8px;
+    height: 8px;
+    margin: auto .5rem;
+}
+.not h1 {
+    font-size: 2rem;
+    margin: 0;
+}
+.mark {
+    font-size: 1.4rem;
+    color: hsl(219, 12%, 42%);
+}
+
+.wrapper:nth-child(1) {
+    margin: 0 1.5rem 1rem;
+}
+.wrapper:nth-child(-n+3) {
+    background-color: hsl(210, 60%, 98%);
+}
+.wrapper {
+    background-color: hsl(0, 0%, 100%);
+    margin: 1rem 1.5rem;
+    padding: 1rem;
+    border-radius: 10px;
+    font-size: 1.4rem;
+    display: flex;
+    flex-direction: row;
+}
+.active {
+    cursor: pointer;
+}
+.active:hover {
+    color: hsl(219, 85%, 26%);
+}
+.profpic {
+    height: 40px;
+    width: 40px;
+    margin: 0 1rem;
+}
+.profpic img {
+    height: 100%;
+    width: 100%;
+}
+.wrapper p {
+    color: hsl(219, 12%, 42%);
+    margin: 2px;
+}
+.wrapper b {
+    color: #000;
+}
+.wrapper b span {
+    color: hsl(219, 12%, 42%);
+}
+.post {
+    display: flex;
+}
+.reply {
+    border: 1px solid hsl(219, 14%, 63%);
+    border-radius: 5px;
+    margin: 1rem 0;
+    padding: 1.5rem;
+    cursor: pointer;
+}
+.reply:hover {
+    background-color: hsl(211, 68%, 94%);
+    border: 1px solid transparent;
+}
+.chessimg {
+    cursor: pointer;
+    margin-left: auto;
+}
+.club b {
+    color: hsl(219, 85%, 26%);
+}
+.post-title b {
+    color: hsl(219, 12%, 42%);
+}
+.time p {
+    color: hsl(219, 14%, 63%);
+}
+
+footer {
+    height: 30px;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    text-align: center;
+}
+.attribution { 
+    font-size: 11px; text-align: center; 
+}
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
+
+/* Small devices (phones, less than 576px) */
+@media (max-width: 575.98px) {
+  
+}
+
+/* Small devices (landscape phones, less than 768px) */
+@media (max-width: 767.98px) { 
+
+}
+
+/* Medium devices (tablets, less than 992px) */
+@media (max-width: 991.98px) { 
+
+}
+
+/* Large devices (desktops, less than 1200px) */
+@media (min-width: 1199.98px) { 
+    .container {
+        background-color: hsl(0, 0%, 100%);
+        height: 900px;
+        width: 700px;
+        border-radius: 10px;
+    }
+
+    .not h1 {
+        font-size: 2.4rem;
+    }
+    .mark {
+        font-size: 1.6rem;
+    }
+
+    .wrapper {
+        font-size: 1.6rem;
+    }
+    .post {
+        display: flex;
+        justify-content: space-between;
+    }
+    .reply {
+        margin: 1rem 2rem;
+    }
+}
